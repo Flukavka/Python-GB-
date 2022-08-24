@@ -1,10 +1,12 @@
+from ast import match_case
 import math
+from unicodedata import digit
 # 1 По двум заданным числам проверить является ли одно квадратом второго
-"""num1 = 16
+""" num1 = 16
 num2 = 4
 
 if (math.sqrt(num1) == num2):
-    print(str(num2) + ' является квадратом ' + str(num1))"""
+    print(str(num2) + ' является квадратом ' + str(num1)) """
 
 # 2 Найти максимальное из пяти чисел
 '''a = [1, 2, 3, 4, 5]
@@ -28,6 +30,22 @@ print(check(n))'''
 
 # 6 Дано число обозначающее день недели. Вывести его название и указать является
 # ли он выходным.
+""" day = int(input('Введите число обозначающее день недели: '))
+match day:
+    case 1:
+        print('Понедельник')
+    case 2:
+        print('Вторник')
+    case 3:
+        print('Среда')
+    case 4:
+        print('Четверг')
+    case 5:
+        print('Пятница')
+    case 6:
+        print('Суббота, выходной')
+    case 7:
+        print('Воскресенье, выходной') """
 
 
 # 7 Проверить истинность утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех
@@ -77,3 +95,10 @@ b_z = int(input("Введите значение по оси ОZ для точк
 a_b = round(math.sqrt(((b_x - a_x) ** 2) +
             ((b_y - b_x) ** 2) + ((b_z - a_z) ** 2)), 1)
 print(a_b)"""
+
+""" x1, y1, z1 = list(map(int, input('Enter the coordinates of the first point separated by a space: ')))
+x2, y2, z2 = list(map(int, input('Enter the coordinates of the first point separated by a space: ')))
+
+distance = round(math.sqrt(((x2 - x1) ** 2) + ((y2 - y1) ** 2) + ((z2 - z1) ** 2)), 1)
+print(distance) """
+
